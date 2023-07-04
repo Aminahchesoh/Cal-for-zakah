@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- webpage setting-->
+    <meta charset="UTF-8">
+    <meta name="description" content="My profile blah blah..">
+    <meta name="keywords" content="Student of Data Science">
+    <meta name="author" content="Aminah Che'soh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal for Zakahh</title>
+    <!--og mean open graph ex. meta -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="android-chrome-512x512.png" type="image/x-icon" >
+
+    <style>
+        /*here is the css's comment*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: blanchedalmond;
+        }
+
+        h1 {
+            text-align: center;
+            /*position of text*/
+            background-color: brown;
+            padding-top: 5px;
+            color: rgb(234, 234, 232);
+        }
+
+        button {
+            color: rgb(57, 40, 18);
+            background-color: rgb(90, 55, 4);
+            font: 1em sans-serif;
+            font-weight: bold;
+
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #resultContainer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cal for Zakat</h1>
+    <form id="zakahForm">
+        <label for="wealthSelect">Select Wealth:</label>
+        <select id="wealthSelect" required>
+            <option value="">-- Select Wealth --</option>
+            <option value="cash">Cash</option>
+            <option value="investments">Investments</option>
+            <option value="gold">Gold</option>
+            <option value="silver">Silver</option>
+        </select>
+
+        <label for="wealthValue">Value of Wealth:</label>
+        <input type="number" id="wealthValue" step="0.01" required>
+
+        <button style="background-color: rgb(244, 116, 52);" type="submit">Calculate Zakah</button>
+        <!-- css มี3วิธี external=ทำไฟล์ใหม่.css, internal=ทำใน tag ของ stlye and inline =ทำในบรรทัดของไลน์นั้นๆ เช่น line88 -->
+    </form>
+
+    <div id="resultContainer" class="hidden">
+        <h2>Zakah Calculation Result:</h2>
+        <p id="zakahAmount"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Cal for Zakah.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

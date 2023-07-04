@@ -10,7 +10,7 @@
     <title>Cal for Zakahh</title>
     <!--og mean open graph ex. meta -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="android-chrome-512x512.png" type="image/x-icon" >
+    <link rel="icon" href="android-chrome-512x512.png" type="image/x-icon">
 
     <style>
         /*here is the css's comment*/
@@ -22,10 +22,18 @@
 
         h1 {
             text-align: center;
-            /*position of text*/
+            color: rgb(234, 234, 232);
             background-color: brown;
             padding-top: 5px;
+            font-weight: bold;
+        }
+
+        nav {
+            text-align: center;
+            /*position of text*/
             color: rgb(234, 234, 232);
+            background-color: rgb(228, 117, 117);
+ 
         }
 
         button {
@@ -74,7 +82,18 @@
 </head>
 
 <body>
-    <h1>Cal for Zakat</h1>
+    <header>
+        <h1 class="logo">Cal for Zakah</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="www.google.com">Home</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Login</a></li> <!-- Added Login button -->
+        </ul>
+    </nav>
     <form id="zakahForm">
         <label for="wealthSelect">Select Wealth:</label>
         <select id="wealthSelect" required>
@@ -101,7 +120,10 @@
         <p>&copy; 2023 Cal for Zakah.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+          alert("Welcome to my Webpage"); // It will display a popup alert
+    </script>
+
 
 </body>
 

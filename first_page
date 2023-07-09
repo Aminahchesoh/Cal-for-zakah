@@ -16,49 +16,45 @@
         /*here is the css's comment*/
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 10px;
             background-color: blanchedalmond;
         }
 
         h1 {
             text-align: center;
+            /*position of text*/
             color: rgb(234, 234, 232);
-            background-color: brown;
-            padding-top: 5px;
             font-weight: bold;
         }
-
+        header {
+            background-color: rgb(180, 84, 20);
+            height: 200;
+        }
+        a {
+            color: rgb(234, 234, 232);
+        }
         nav {
             text-align: center;
             /*position of text*/
-            color: rgb(234, 234, 232);
-            background-color: rgb(228, 117, 117);
- 
         }
-
         button {
             color: rgb(57, 40, 18);
             background-color: rgb(90, 55, 4);
             font: 1em sans-serif;
             font-weight: bold;
-
         }
-
         form {
             max-width: 400px;
             margin: 20px auto;
         }
-
         label {
             display: block;
             margin-top: 10px;
         }
-
         input {
             width: 100%;
             padding: 5px;
         }
-
         button {
             display: block;
             width: 100%;
@@ -70,6 +66,7 @@
             margin-top: 20px;
             text-align: center;
         }
+        
 
         .hidden {
             display: none;
@@ -83,17 +80,16 @@
 
 <body>
     <header>
-        <h1 class="logo">Cal for Zakah</h1>
+        <h1>Cal for Zakah</h1> 
+        <nav>
+            <a href="https://www.google.co.th/">Home</a>
+            <a href="#">Information</a>
+            <a href="#">About</a>
+            <a href="#">Contact us</a>
+            <a href="#">Login</a> <!-- Added Login button -->
+        </nav>
     </header>
-    <nav class="navigation">
-        <ul>
-            <li><a href="https://www.google.co.th/">Home</a></li>
-            <li><a href="#">Information</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Login</a></li> <!-- Added Login button -->
-        </ul>
-    </nav>
+   
     <form id="zakahForm">
         <label for="wealthSelect">Select Wealth:</label>
         <select id="wealthSelect" required>
@@ -121,7 +117,6 @@
     </footer>
 
     <script>
-          alert("Welcome to my Webpage"); // It will display a popup alert
     </script>
 
 

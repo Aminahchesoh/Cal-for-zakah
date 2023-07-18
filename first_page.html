@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th"> <!-- สิ่งที่ยุวใน html tag => html attributes-->
+
+<!-- fact! type of element 
+    #container elem. มีแท้กเปิด-ปิด
+    #void elem. ไม่มีแท้กปิด
+    #block element the result there are another line ex. <br> <list นอกจากจะให้บรรทัดเดียวกันต้องแก้ใน css> หน้าเว็บมันจะคนละบรรทัดถึงแม้ว่าในโค้ดอยู่บรรทัดเดียวกัน
+    #inline element the result there are same line ex. <img>, <p>, <nav> หน้าเว็บจะอยู่ในบรรทัดเดียวกัน ถึงแม้โค้ดคนละบรรทัด-->
+<head>
+    <!-- webpage setting -->
+    <meta charset="UTF-8">
+    <meta name="description" content="My profile blah blah..">
+    <meta name="keywords" content="Student of Data Science">
+    <meta name="author" content="Aminah Che'soh">
+    <!-- viewport below about the size of screen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal for Zakahh</title>
+    <!--og mean open graph ex. meta -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="android-chrome-512x512.png" type="image/x-icon" alt="Website favicon">
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: blanchedalmond;
+        }
+
+        h1 {
+            text-align: center;
+            /*position of text*/
+            color: rgb(234, 234, 232);
+            font-weight: bold;
+        }
+
+        header {
+            background-color: rgb(180, 84, 20);
+            height: 200;
+            width: 100;
+        }
+
+        a {
+            color: rgb(234, 234, 232);
+        }
+
+        nav {
+            text-align: center;
+            /*position of text*/
+        }
+
+        button {
+            color: rgb(57, 40, 18);
+            background-color: rgb(90, 55, 4);
+            font: 1em sans-serif;
+            font-weight: bold;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #resultContainer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        aside {
+            color: #2e0404;
+            background-color: rgb(191, 108, 53);
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 200px;
+        }
+
+        aside h2 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        aside p {
+            margin: 5px 0;
+        }
+
+        aside a {
+            color: #fcf7f0;
+            text-decoration: none;
+        }
+
+        aside a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-left: 220px;
+            /* Adjust the margin to create space for the sidebar */
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            /*ให้มันอยู่ตรงกลาง*/
+        } 
+    </style>
+</head>
+
+<body>
+    <aside> <!-- ขนาดของh4 = ขนาดของ  paragraphtag<p> -->
+        <!-- worked like nav but diff task, mostly at the side of page-->
+        <h2>Sidebar</h2>
+        <p><a href="#">History</a></p>
+        <p><a href="#">Useful Resources</a></p>
+        <p><a href="contact.html">Contact us</a></p>
+        <!-- put the file that we want to link it in"-" instead of # "-->
+    </aside>
+    <header>
+        <h1>Cal for Zakah</h1>
+        <nav>
+            <!-- Navigation bar -->
+            <a href="index.html">Homeeee</a>
+            <a href="about.html">About</a>
+            <a href="information.html">Information</a>
+            <a href="#">Login</a>
+            <!-- Added Login button -->
+        </nav>
+    </header>
+    <!-- TABLE
+    <th>= table head "Bold text"
+    <td>= table data "Simple text"-->
+        
+    <!-- IMAGE tag have 4
+    #src= ชื่อไฟล์หรือที่ตั้ง ถ้าตั้งในโฟลเดอร์เดียวกับไฟล์โค้ดเรา ให้ใส่ชื่อรูปแทนได้เลย ถ้าเอาที่อื่นต้องก็อปที่ยุวทั้งหมด
+    #alt= ระบุชนิดของรูป มันจะโชว์ตอนเน็ทช้าแทนรูปไรงี้
+    #width&height = ขนาด-->
+    <img src="img/logoweb.jpg">
+    <main>
+        <form id="zakahForm">
+            <label for="wealthSelect">Select Wealth:</label>
+            <select id="wealthSelect" required>
+                <option value="">-- Select Wealth --</option>
+                <option value="cash">Cash</option>
+                <option value="investments">Investments</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+            </select>
+
+            <label for="wealthValue">Value of Wealth:</label>
+            <input type="number" id="wealthValue" step="0.01" required>
+
+            <button style="background-color: rgb(244, 116, 52);" type="submit">Calculate Zakah</button>
+        </form>
+
+        <div id="resultContainer" class="hidden">
+            <h2>Zakah Calculation Result:</h2>
+            <p id="zakahAmount"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Cal for Zakah.</p>
+    </footer>
+
+    <script>
+    </script>
+</body>
+
+</html>

@@ -6,6 +6,7 @@
     #void elem. ไม่มีแท้กปิด
     #block element the result there are another line ex. <br> <list นอกจากจะให้บรรทัดเดียวกันต้องแก้ใน css> หน้าเว็บมันจะคนละบรรทัดถึงแม้ว่าในโค้ดอยู่บรรทัดเดียวกัน
     #inline element the result there are same line ex. <img>, <p>, <nav> หน้าเว็บจะอยู่ในบรรทัดเดียวกัน ถึงแม้โค้ดคนละบรรทัด-->
+
 <head>
     <!-- webpage setting -->
     <meta charset="UTF-8">
@@ -23,9 +24,13 @@
         /*here is the css's comment*/
         body {
             font-family: Arial, sans-serif;
-            margin: 10px;
+            margin: 10px auto;
+            /* Center the content horizontally */
             background-color: blanchedalmond;
+            max-width: 800px;
+            /* Set the maximum width for the content */
         }
+
 
         h1 {
             text-align: center;
@@ -37,7 +42,7 @@
         header {
             background-color: rgb(180, 84, 20);
             height: 200;
-            
+
         }
 
         a {
@@ -122,7 +127,7 @@
         footer {
             text-align: center;
             /*ให้มันอยู่ตรงกลาง*/
-        } 
+        }
     </style>
 </head>
 
@@ -151,7 +156,7 @@
     #src= ชื่อไฟล์หรือที่ตั้ง ถ้าตั้งในโฟลเดอร์เดียวกับไฟล์โค้ดเรา ให้ใส่ชื่อรูปแทนได้เลย ถ้าเอาที่อื่นต้องก็อปที่ยุวทั้งหมด
     #alt= ระบุชนิดของรูป มันจะโชว์ตอนเน็ทช้าแทนรูปไรงี้
     #width&height = ขนาด-->
-    
+
     <img src="img/logoweb.jpeg">
     <main>
         <form id="zakahForm">

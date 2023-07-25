@@ -17,118 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cal for Zakahh</title>
     <!--og mean open graph ex. meta -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="android-chrome-512x512.png" type="image/x-icon" alt="Website favicon">
-
-    <style>
-        /*here is the css's comment*/
-        body {
-            font-family: Arial, sans-serif;
-            margin: 10px auto;
-            /* Center the content horizontally */
-            background-color: blanchedalmond;
-            max-width: 800px;
-            /* Set the maximum width for the content */
-        }
-
-
-        h1 {
-            text-align: center;
-            /*position of text*/
-            color: rgb(234, 234, 232);
-            font-weight: bold;
-        }
-
-        header {
-            background-color: rgb(180, 84, 20);
-            height: 200;
-
-        }
-
-        a {
-            color: rgb(234, 234, 232);
-        }
-
-        nav {
-            text-align: center;
-            /*position of text*/
-        }
-
-        button {
-            color: rgb(57, 40, 18);
-            background-color: rgb(90, 55, 4);
-            font: 1em sans-serif;
-            font-weight: bold;
-        }
-
-        form {
-            max-width: 400px;
-            margin: 20px auto;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-
-        input {
-            width: 100%;
-            padding: 5px;
-        }
-
-        button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        #resultContainer {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        aside {
-            color: #2e0404;
-            background-color: rgb(191, 108, 53);
-            padding: 10px;
-            position: fixed;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 200px;
-        }
-
-        aside h2 {
-            color: #ffffff;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        aside p {
-            margin: 5px 0;
-        }
-
-        aside a {
-            color: #fcf7f0;
-            text-decoration: none;
-        }
-
-        aside a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            margin-left: 220px;
-            /* Adjust the margin to create space for the sidebar */
-            padding: 20px;
-        }
-
-        footer {
-            text-align: center;
-            /*ให้มันอยู่ตรงกลาง*/
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="design.css">
+   
 </head>
 
 <body>
@@ -169,7 +59,7 @@
                 <option value="silver">Silver</option>
             </select>
 
-            <label for="wealthValue">Value of Wealth:</label>
+            <label for="wealthValue"><span class="v">value</span><span class="s">of</span><span class="w">Wealth:</span> </label>
             <input type="number" id="wealthValue" step="0.01" required>
 
             <button style="background-color: rgb(244, 116, 52);" type="submit">Calculate Zakah</button>

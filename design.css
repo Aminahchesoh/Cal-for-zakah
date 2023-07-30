@@ -11,15 +11,15 @@
  }
 
  .v {
-     background-color: aqua;
+     background-color: rgb(227, 204, 159);
  }
 
  .s {
-     background-color: rgb(113, 71, 21);
+     background-color: rgb(221, 185, 141);
  }
 
  .w {
-     background-color: aquamarine;
+     background-color: rgb(218, 169, 90);
  }
 
  h1 {
@@ -29,8 +29,9 @@
  }
 
  header {
-     background-color: rgb(180, 84, 20);
+     background-color: rgb(150, 71, 18);
      height: 200;
+     margin: 10px auto;
 
  }
 

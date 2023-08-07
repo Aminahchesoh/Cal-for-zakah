@@ -1,7 +1,9 @@
  /*here is the css's comment*/
+ 
  body {
      font-family: Arial, sans-serif;
-     margin: 10px auto;
+     margin: 10px 10px;
+     /*top right bottom left*/ /*top R-L left*/ /*top-left R-L*/
      background-color: blanchedalmond;
  }
 
@@ -32,6 +34,7 @@
      background-color: rgb(150, 71, 18);
      height: 200;
      margin: 10px auto;
+     padding: 10px;
 
  }
 

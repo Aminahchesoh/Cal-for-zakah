@@ -1,5 +1,10 @@
  /*here is the css's comment*/
- 
+ * {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
  body {
      font-family: Arial, sans-serif;
      margin: 10px 10px;
@@ -30,11 +35,18 @@
      color: rgb(234, 234, 232);
  }
 
+
  header {
-     background-color: rgb(150, 71, 18);
-     height: 200;
-     margin: 10px auto;
-     padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgb(202, 60, 13);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
 
  }
 
@@ -55,12 +67,27 @@
 
  }
 
- button {
-     color: rgb(57, 40, 18);
-     background-color: rgb(90, 55, 4);
-     font: bold 1em Arial, sans-serif;
 
- }
+ .navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.login{
+    width: 130px;
+    height: 50px;
+    border: 2px;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 20px;
+    text-decoration: none;
+}
 
  form {
      max-width: 400px;

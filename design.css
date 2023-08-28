@@ -9,32 +9,19 @@
      font-family: Arial, sans-serif;
      margin: 10px 10px;
      /*top right bottom left*/ /*top R-L left*/ /*top-left R-L*/
-     background-color: blanchedalmond;
- }
-
- span {
-     margin-left: 20px;
-     padding: 5px;
- }
-
- .v {
-     background-color: rgb(227, 204, 159);
- }
-
- .s {
-     background-color: rgb(221, 185, 141);
- }
-
- .w {
-     background-color: rgb(218, 169, 90);
+     background-color: rgb(222, 200, 168);
  }
 
  h1 {
      text-align: center;
      /*position of text*/
-     color: rgb(234, 234, 232);
+     color: rgb(255, 255, 255);
  }
 
+ .img{
+    text-align: center;
+    
+ }
 
  header {
     position: fixed;
@@ -46,12 +33,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
 
  }
 
  a {
-     color: rgb(234, 234, 232);
+     color: rgb(255, 255, 255);
 
  }
 
@@ -67,20 +53,20 @@
 
  }
 
-
  .navigation a {
     position: relative;
     font-size: 1.1em;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 500;
     margin-left: 20px;
 }
 
 .login{
-    width: 130px;
-    height: 50px;
-    border: 2px;
+    padding: 10px;
+    width: 80px;
+    height:40px;
+    border: 20px;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
@@ -128,7 +114,7 @@
  }
 
  aside h2 {
-     color: #f6f6f6;
+     color: #ffffff;
      margin-bottom: 10px;
  }
 
@@ -155,5 +141,6 @@
 
  footer {
      text-align: center;
+     padding: 20px 0;
      /*ให้มันอยู่ตรงกลาง*/
  }
